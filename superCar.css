@@ -1,0 +1,25 @@
+.scene {
+	background: #CCC url('./imgCar/город2.png') repeat-x;
+	
+	height: 500px;
+	
+	
+	-webkit-animation: backgroundScroll 20s linear infinite;
+	animation: backgroundScroll 3s linear infinite;
+	
+}
+
+.model {
+	display: none;
+	
+}
+
+@-webkit-keyframes backgroundScroll {
+	from {background-position: 0 0;}
+	to {background-position: -561px 0;}
+}
+        
+@keyframes backgroundScroll {
+	from {background-position: 0 0;}
+	to {background-position: -561px 0;}
+}

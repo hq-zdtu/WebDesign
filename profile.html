@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>HTML Design: Profile form</title>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<form class="input-form">
+			<div class="header"><h4>Заполните анкету</h4><span class="requiredWarn">* Обязательные поля</span></div>
+			<hr class="head" />
+			<div class="row">
+				<label for="name">Ваши Имя и Фамилия</label>
+				<input name="name" type="text" placeholder="Имя и Фамилия" required />
+			</div>
+			<hr/>
+			<div class="row">
+				<label for="login">Введите логин для сайта (на английском)</label>
+				<input name="login" type="text" placeholder="Логин" required />
+			</div>
+			<hr/>
+			<div class="row">
+				<label>Ваш пол</label>
+				<input name="gender" type="radio" id="genderM" value="male" /> <label class="rad" for="genderM">М</label>
+				<input name="gender" type="radio" id="genderF" value="female"/> <label class="rad" for="genderF">Ж</label>
+			</div>
+			<hr/>
+			<div class="row">
+				<label for="date">Введите дату рождения</label>
+				<input name="date" type="date" required />
+			</div>
+			<hr/>
+			<div class="row">
+				<label for="email">Введите e-mail</label>
+				<input name="email" type="email" placeholder="Ваш e-mail" required />
+			</div>
+			
+			<hr/>
+			<div class="row">
+				<label for="web-site">Web-Site(url)</label>
+				<input name="web-site" type="url" placeholder="http://www.mysite.com" required />
+			</div>
+			<hr/>
+			<div class="row">
+				<label for="ccard">Кредитная карта</label>
+				<input name="ccard" type="number" placeholder="1234123412341234" maxlength="16" max="9999999999999999" required />
+			</div>
+			<hr/>
+			<div class="row">
+				<label for="phone">Телефон</label>
+				<input name="phone" type="tel" placeholder="+380 XX XXX XX XX" required />
+			</div>
+			<hr/>
+			<div class="row">
+				<label for="message">Сообщение</label>
+				<textarea name="message" placeholder="Ваши пожелания" required></textarea>
+			</div>
+			<hr class="head" />
+			<div class="row">
+				<input type="submit" value="Отправить" />
+			</div>
+		</form>
+	</body>
+</html>

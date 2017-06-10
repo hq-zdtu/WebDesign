@@ -1,0 +1,37 @@
+body {
+	font-family: Arial, Helvetica;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	width: 1100px;
+	height: 146px;
+	background: url('imgShop/head-bg.png') no-repeat;
+	margin: 0 auto;
+}
+header .logo{
+	position: relative;
+	left: 102px;
+	top: 43px;
+}
+
+header .phone{
+	position: relative;
+	left: 708px; /*1100-98-139-150*/
+	top: 37px;
+}
+
+nav {
+	width:900px;
+	height: 52px;
+	margin: 0 auto;
+	background: url('imgShop/menu.png') 14px 0 repeat-x,
+		url('imgShop/menu-l.png') 0 0 no-repeat,
+		url('imgShop/menu-r.png') 100% 0 no-repeat;
+	
+	
+}
+
+
+

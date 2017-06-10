@@ -1,0 +1,161 @@
+body {
+	font-family: Arial, Helvetica;
+	
+}
+
+.requiredWarn {
+    color: Red;
+    display: inline;
+    float: right;
+}
+
+.input-form {
+	width: 600px;
+	padding:20px 30px 10px;
+	background:#EEEEEE;
+	margin: 50px auto auto;
+	min-height: 200px;
+	font-size: 12px;
+}
+
+.input-form input, .input-form textarea, .input-form select {
+	padding:5px;
+	margin:0;
+	border:solid 1px #C0C0C0;
+	width: 190px;
+	height: 22px;
+	color: #C0C0C0;
+	border-radius: 3px;
+	
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+}
+
+.input-form input, .input-form textarea {
+	padding-left: 3px;
+	background: linear-gradient(to top, #FFF, #F0F0F0)
+}
+
+.input-form textarea {
+	height: 60px;
+}
+
+.input-form input[type=date]{
+	padding:0 15px 0 5px;
+}
+
+.input-form input[type=radio]{
+	vertical-align: bottom;
+	width: auto;
+	height: auto;
+	margin: auto auto 1px;
+}
+
+.input-form h4 {
+	display: inline;
+}
+
+.input-form  label{
+	width: 150px;
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.input-form  label[for=message]{
+	vertical-align: top;
+}
+
+.input-form  label.rad{
+	display:inline;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+.input-form input:required, .input-form textarea:required{
+	background: #fff url(imgProfile/redAsterisk.png) no-repeat 98% center;
+}
+
+.input-form .header {
+	
+	
+}
+
+.input-form .header h4{
+	padding:0;
+	margin:0;
+}
+
+.input-form hr.head {
+    border-top: 1px solid #CDDDDD;
+	border-bottom: 1px solid #89BBBB;
+}
+
+.input-form hr {
+    border-top: 1px solid #D2EAEA;
+	border-bottom: 1px solid #B9E6E6;
+}
+
+.input-form  .row {
+	clear:both;
+}
+
+.input-form  .row:last-child {
+	text-align: center;
+}
+
+.input-form input[type=submit]{
+	height:auto;
+	width: auto;
+	padding: 5px;
+	
+	background-color: #C16868;
+    background: -webkit-gradient(linear, left top, left bottom, from(#C16868), to(#A11e1e));
+    background: -webkit-linear-gradient(top, #C16868, #A11e1e);
+    background: -moz-linear-gradient(top, #C16868, #A11e1e);
+    background: -ms-linear-gradient(top, #C16868, #A11e1e);
+    background: -o-linear-gradient(top, #C16868, #A11e1e);
+    background: linear-gradient(top, #C16868, #A11e1e);
+    border: 1px solid #A11111;
+    border-bottom: 1px solid #A92b2b;
+	
+	color: white;
+}
+.input-form input[type=submit]:hover{
+	opacity: .85;
+    cursor: pointer;
+}
+
+.input-form input:not([type=radio]), .input-form textarea { 
+		border:1px solid #aaa;
+		box-shadow: 0px 0px 1px #ccc, 0 10px 15px #eee inset;
+		border-radius:2px;
+		/**/
+		-moz-transition: width .25s; 
+		-webkit-transition: width .25s; 
+		-o-transition: width .25s;
+		transition: width .25s;
+	}
+
+.input-form input:focus, .input-form textarea:focus {
+	background: #fff; 
+	border:1px solid #555; 
+	box-shadow: 0 0 3px #aaa; 
+	width:210px;
+	padding-right:20px;
+}
+
+.input-form input:required:valid, .input-form textarea:required:valid {
+	background: #fff url(imgProfile/yes.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+}
+.input-form input:focus:invalid, .input-form textarea:focus:invalid {
+	background: #fff url(imgProfile/no.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535
+}
+
+
