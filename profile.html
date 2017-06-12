@@ -2,6 +2,15 @@
 	<head>
 		<title>HTML Design: Profile form</title>
 		<link rel="stylesheet" href="main.css" />
+		
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+		<script>
+			jQuery(function($){
+				$("#ccard").mask("9999 9999 9999 9999");
+				$("#phone").mask("(999) 999-99-99");
+			});
+		</script>
 	</head>
 	<body>
 		<form class="input-form">
@@ -9,12 +18,12 @@
 			<hr class="head" />
 			<div class="row">
 				<label for="name">Ваши Имя и Фамилия</label>
-				<input name="name" type="text" placeholder="Имя и Фамилия" required />
+				<input name="name" type="text" placeholder="Имя и Фамилия" required class="pad-right" />
 			</div>
 			<hr/>
 			<div class="row">
 				<label for="login">Введите логин для сайта (на английском)</label>
-				<input name="login" type="text" placeholder="Логин" required />
+				<input name="login" type="text" placeholder="Логин" required class="pad-right" />
 			</div>
 			<hr/>
 			<div class="row">
@@ -25,33 +34,35 @@
 			<hr/>
 			<div class="row">
 				<label for="date">Введите дату рождения</label>
-				<input name="date" type="date" required />
+				<input name="date" type="date" required class="pad-right" />
 			</div>
 			<hr/>
 			<div class="row">
 				<label for="email">Введите e-mail</label>
-				<input name="email" type="email" placeholder="Ваш e-mail" required />
+				<input name="email" type="email" placeholder="Ваш e-mail" required class="pad-right" />
 			</div>
 			
 			<hr/>
 			<div class="row">
 				<label for="web-site">Web-Site(url)</label>
-				<input name="web-site" type="url" placeholder="http://www.mysite.com" required />
+				<input name="web-site" type="url" placeholder="http://www.mysite.com" required class="pad-right" />
 			</div>
 			<hr/>
 			<div class="row">
 				<label for="ccard">Кредитная карта</label>
-				<input name="ccard" type="number" placeholder="1234123412341234" maxlength="16" max="9999999999999999" required />
+				<input id="ccard" name="ccard" type="text" placeholder="9999 9999 9999 9999" maxlength="19" 
+					pattern="([0-7]{4})+\s([0-7]{4})+\s([0-7]{4})+\s([0-7]{4})" required class="pad-right" />
 			</div>
 			<hr/>
 			<div class="row">
 				<label for="phone">Телефон</label>
-				<input name="phone" type="tel" placeholder="+380 XX XXX XX XX" required />
+				<input id="phone" name="phone" type="tel" placeholder="(999) 999-99-99" required
+					pattern="[(]+([0-9]{3})+[)]+\s[0-9]{3}([-][0-9]{2}){2}" class="pad-right" />
 			</div>
 			<hr/>
 			<div class="row">
 				<label for="message">Сообщение</label>
-				<textarea name="message" placeholder="Ваши пожелания" required></textarea>
+				<textarea name="message" placeholder="Ваши пожелания" required class="pad-right" ></textarea>
 			</div>
 			<hr class="head" />
 			<div class="row">

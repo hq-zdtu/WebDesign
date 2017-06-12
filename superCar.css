@@ -6,11 +6,11 @@
 	
 	/*-webkit-animation: backgroundScroll 5s linear 7s;
 	animation: backgroundScroll 5s linear 7s/*infinite*/;
-    animation: town-scroll 7s linear ;
+    animation: town-scroll 8s linear ;
 }
 
 @keyframes town-scroll {
-    from {background-position: 1333px 100%, 0 0;}
+    from {background-position: 1057px 100%, 0 0;}
     to {background-position: 0 100%, 0 0;}
 }
 
@@ -19,7 +19,7 @@
 	top: 185px;
 	left: 100px;
 
-	animation: ZazGo 7s linear;
+	animation: ZazGo 8s linear;
     animation-fill-mode: both;
 	
 }
@@ -30,14 +30,14 @@
     100% {transform: translate(980px, 0px);}
 }
 
-@-webkit-keyframes backgroundScroll {
+/*@-webkit-keyframes backgroundScroll {
 	from {background-position: 0 0;}
-	to {background-position: /*-561px*/ -1058px 0;}
-}
+	to {background-position: -1057px 0;}
+}*/
         
 @keyframes backgroundScroll {
 	from {background-position: 0 0;}
-	to {background-position: -1058px 0;}
+	to {background-position: -1057px 0;}
 }
 
 .car {
@@ -50,7 +50,7 @@
 	position: absolute;
 	z-index: 1;
 	
-	animation: wheel_rotate 7s linear;
+	animation: wheel_rotate 8s linear;
 }
 
 .wheel1 {
@@ -72,17 +72,39 @@
     }
 }
 
-.wheel1 img{
-	
-}
-.wheel2 img {
-
+.gas1,.gas2{
+	position: absolute;
+	z-index: 5;
+	opacity:0;
 }
 .gas1 {
-	display: none;
+	left: -20px;
+	top: 67px;
 }
 .gas2 {
-	display: none;
+	left: -65px;
+	top: 45px;
+}
+
+.gas1{
+    animation: gas-event 3s linear;
+    opacity:0;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+	animation-iteration-count:3;
+	-webkit-animation-iteration-count:3;
+}
+.gas2{
+    animation: gas-event 3s linear;
+    opacity:0;
+    animation-delay: 1s;
+	animation-iteration-count:3;
+	-webkit-animation-iteration-count:3;
+}
+
+@keyframes gas-event {
+    from{opacity:0;}
+    to{opacity:1;}
 }
 
 
