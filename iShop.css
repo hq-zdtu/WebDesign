@@ -1,36 +1,88 @@
+
+
 body {
-	font-family: Arial, Helvetica;
+/*	font-family: Arial, Helvetica;*/
+    font-family: 'Exo 2'  ;
 	padding: 0;
 	margin: 0;
+	
+	background-color:#f7f7f7;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: url('./Fonts/Exo_2/Exo2-Regular.ttf') format("sans-serif");
+    font-style: normal;
+    font-weight: normal;
 }
 
 header {
+    padding-top: 40px;
 	width: 1100px;
-	height: 146px;
+	height: 106px;
 	background: url('imgShop/head-bg.png') no-repeat;
+	/*background: url('imgShop/iShop.png') no-repeat;*/
 	margin: 0 auto;
 }
 header .logo{
 	position: relative;
 	left: 102px;
-	top: 43px;
+	top: 3px;
 }
 
 header .phone{
 	position: relative;
 	left: 708px; /*1100-98-139-150*/
-	top: 37px;
+	top: -3px;
+}
+
+header span{
+	
+/*}
+
+.ishop {*/
+    text-decoration: none;
+    font-size: 400%;
+    text-shadow: #bdbdbd 0 0 2px, 0 1px 0 rgba(0,0,0,0.5); /* Свечение светло-серого цвета */
+    color: #f2fae4;
+}
+
+.header, nav, .content, footer{
+	max-width: 900px;
+	min-width: 500px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
 }
 
 nav {
-	width:900px;
 	height: 52px;
-	margin: 0 auto;
-	background: url('imgShop/menu.png') 14px 0 repeat-x,
-		url('imgShop/menu-l.png') 0 0 no-repeat,
-		url('imgShop/menu-r.png') 100% 0 no-repeat;
+	margin: -30px auto;
+	border-radius: 5px;
+	background: url('imgShop/menu.png') 14px 0 repeat-x;
+	justify-content: space-between;
+}
+
+nav li{
+	display: inline;
+}
+nav input {
+	/*display: inline;
+	text-align: right;*/
+	vertical-align: center;
+	margin: auto 15px auto auto;
+	background: white;
+	border-radius: 15px;
+	height: 20px;
+	width: 80px;
+    text-align: right;
+    padding: 5px;
+    border: 2px;
 	
-	
+	outline: none;
+	font-size:20px;
+    font-weight: bold;
+    color: #acc45b;
 }
 
 
