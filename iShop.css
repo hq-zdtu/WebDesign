@@ -9,13 +9,6 @@ body {
 	background-color:#f7f7f7;
 }
 
-@font-face {
-    font-family: 'Exo 2';
-    src: url('./Fonts/Exo_2/Exo2-Regular.ttf') format("sans-serif");
-    font-style: normal;
-    font-weight: normal;
-}
-
 header {
     padding-top: 40px;
 	width: 1100px;
@@ -43,8 +36,16 @@ header span{
 .ishop {*/
     text-decoration: none;
     font-size: 400%;
-    text-shadow: #bdbdbd 0 0 2px, 0 1px 0 rgba(0,0,0,0.5); /* Свечение светло-серого цвета */
-    color: #f2fae4;
+    
+    /*color: #f2fae4;*/
+	
+	background: linear-gradient(#F6FCEC, #BFCCA0);
+	background: -webkit-linear-gradient(#F6FCEC, #BFCCA0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	text-shadow:  2px 2px 7px rgba(0, 0, 0, 0.33);
+	/*text-shadow: #bdbdbd 0 0 2px, 0 1px 0 rgba(0,0,0,0.5); *//* Свечение светло-серого цвета */
 }
 
 .header, nav, .content, footer{
@@ -65,7 +66,30 @@ nav {
 
 nav li{
 	display: inline;
+	
 }
+
+nav li a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size:16px;
+	/*font-weight: bold;*/
+}
+
+nav  .button1{
+	margin: auto 15px auto auto;
+	background: white url('imgShop/scartico.png') no-repeat 10px center;
+	border-radius: 15px;
+	padding: 5px 10px 5px 28px;
+    /*border: 2px;*/
+	
+	outline: none;
+	font-size:16px;
+    font-weight: bold;
+    color: #acc45b;
+}
+
 nav input {
 	/*display: inline;
 	text-align: right;*/
@@ -73,10 +97,10 @@ nav input {
 	margin: auto 15px auto auto;
 	background: white;
 	border-radius: 15px;
-	height: 20px;
-	width: 80px;
+	/*height: 20px;
+	width: 80px;*/
     text-align: right;
-    padding: 5px;
+    padding: 5px 65px 5px 8px ;
     border: 2px;
 	
 	outline: none;
