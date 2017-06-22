@@ -6,7 +6,7 @@ body {
 	padding: 0;
 	margin: 0;
 	
-	background-color:#f7f7f7;
+	background-color:#f6f6f6;
 }
 
 header {
@@ -29,39 +29,35 @@ header .phone{
 	top: -3px;
 }
 
-header span{
-	
-/*}
-
-.ishop {*/
-    text-decoration: none;
-    font-size: 400%;
-    
-    /*color: #f2fae4;*/
-	
-	background: linear-gradient(#F6FCEC, #BFCCA0);
-	background: -webkit-linear-gradient(#F6FCEC, #BFCCA0);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: transparent;
-	text-shadow:  2px 2px 7px rgba(0, 0, 0, 0.33);
-	/*text-shadow: #bdbdbd 0 0 2px, 0 1px 0 rgba(0,0,0,0.5); *//* Свечение светло-серого цвета */
-}
-
 .header, nav, .content, footer{
 	max-width: 900px;
 	min-width: 500px;
+	margin: 0 auto;
+}
+
+.header, nav, footer{
 	box-sizing: border-box;
+	display:-webkit-flex;
+    display:-ms-flexbox;
 	display: flex;
 	flex-direction: row;
 }
 
+.content {
+	background-color: white;
+	z-index: 1;
+	box-shadow: 0 0 5px rgba(0,0,0,0.25); /* Параметры тени */
+}
+
 nav {
+	position: relative;
+	top: -28px;
+	width: 900px;
 	height: 52px;
-	margin: -28px auto;
 	border-radius: 5px;
 	background: url('imgShop/menu.png') 0 0 repeat-x;
 	justify-content: space-between;
+	z-index: 100;
 }
 
 nav ul { 
@@ -100,6 +96,76 @@ nav  .button1{
 	border-bottom: solid 1px #677D2B;
 	text-shadow: #EEE 0 0 1px, 0 1px 0 rgba(0,0,0,0.25);
 }
+
+_:-ms-fullscreen, :root nav  .button1{ /* IE11 hack*/
+	height: 14px;
+}
+/*===[ Content ]===*/
+section {
+    margin-top: -30px;
+	width: 695px;
+	background-color: #eee;
+}
+
+.search{
+	background: lightgray;
+
+	margin-top: 15px ; 
+	padding: 0 15px; 
+	
+	min-width: 100px; 
+	width: 100%; 
+	height: 50px;
+	
+	display: flex;
+	flex-direction: row;
+}
+.search .input{
+	background: #fff; 
+	border: 1px solid #e7e7e7; 
+	border-radius: 20px; 
+	box-sizing: border-box;
+    font: 12px 'Exo 2', sans-serif; 
+	padding: 10px; 
+	margin-right: 10px;
+	width: 560px;
+}
+
+.btn-toCart, .search .submit{
+	margin: auto 15px auto auto;
+	background: #F6F6F6;
+	border: solid 3px #86a634;
+	border-radius: 15px;
+	padding: 7px 9px 6px 9px;
+	outline: none;
+	font-size:12px;
+    color: #6F6F6F;
+	text-shadow: #EEE 0 0 1px, 0 1px 0 rgba(0,0,0,0.25);
+}
+
+/*.search .submit{
+	border-radius: 30px; 
+	opacity: 1.3;
+	width: 120px; 
+	border: none; 
+	height: 50px; 
+	outline: none;
+}*/
+
+
+
+/*.search .submit:hover{
+    background-color: #F7F7F7;
+    box-shadow: 0px 0px 20px silver;
+    -webkit-box-shadow: 0px 0px 20px silver;
+    -moz-box-shadow: 0px 0px 20px silver;
+    -khtml-box-shadow: 0px 0px 20px silver;
+}
+*/
+
+
+
+
 
 
 
