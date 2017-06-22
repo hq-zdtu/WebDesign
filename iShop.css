@@ -58,55 +58,47 @@ header span{
 
 nav {
 	height: 52px;
-	margin: -30px auto;
+	margin: -28px auto;
 	border-radius: 5px;
-	background: url('imgShop/menu.png') 14px 0 repeat-x;
+	background: url('imgShop/menu.png') 0 0 repeat-x;
 	justify-content: space-between;
+}
+
+nav ul { 
+	padding-left: 6px;
+	margin-top: 14px;
 }
 
 nav li{
 	display: inline;
-	
 }
 
 nav li a {
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	font-size:16px;
+	font-size:12px;
 	/*font-weight: bold;*/
+	padding: 18px 13px 19px;
+	text-shadow: #bdbdbd 0 0 2px, 0 1px 0 rgba(0,0,0,0.5);
+}
+
+nav li a:hover{
+	background: url('imgShop/menu-hover.png') 0 0 repeat-x;
 }
 
 nav  .button1{
 	margin: auto 15px auto auto;
-	background: white url('imgShop/scartico.png') no-repeat 10px center;
+	background: white url('imgShop/scartico.png') no-repeat 9px center;
 	border-radius: 15px;
-	padding: 5px 10px 5px 28px;
-    /*border: 2px;*/
+	padding: 9px 10px 8px 27px;
 	
 	outline: none;
-	font-size:16px;
-    font-weight: bold;
-    color: #acc45b;
-}
-
-nav input {
-	/*display: inline;
-	text-align: right;*/
-	vertical-align: center;
-	margin: auto 15px auto auto;
-	background: white;
-	border-radius: 15px;
-	/*height: 20px;
-	width: 80px;*/
-    text-align: right;
-    padding: 5px 65px 5px 8px ;
-    border: 2px;
-	
-	outline: none;
-	font-size:20px;
-    font-weight: bold;
-    color: #acc45b;
+	font-size:12px;
+    color: #839E47;
+	text-decoration: none;
+	border-bottom: solid 1px #677D2B;
+	text-shadow: #EEE 0 0 1px, 0 1px 0 rgba(0,0,0,0.25);
 }
 
 
