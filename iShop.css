@@ -81,7 +81,7 @@ nav li a:hover{
 	background: url('imgShop/menu-hover.png') 0 0 repeat-x;
 }
 
-nav  .button1{
+nav  .shopcart{
 	margin: auto 15px auto auto;
 	background: white url('imgShop/scartico.png') no-repeat 9px center;
 	border-radius: 15px;
@@ -95,7 +95,7 @@ nav  .button1{
 	text-shadow: #EEE 0 0 1px, 0 1px 0 rgba(0,0,0,0.25);
 }
 
-_:-ms-fullscreen, :root nav  .button1{ /* IE11 hack*/
+_:-ms-fullscreen, :root nav  .shopcart{ /* IE11 hack*/
 	height: 14px;
 }
 /*===[ Content ]===*/
@@ -132,7 +132,7 @@ section {
 	background: #F6F6F6;
 	border: solid 3px #86a634;
 	border-radius: 15px;
-	padding: 7px 9px 6px 9px;
+	padding: 7px 23px 6px;
 	font-size:12px;
     color: #6F6F6F;
 	text-shadow: #EEE 0 0 1px, 0 1px 0 rgba(0,0,0,0.25);
@@ -141,7 +141,7 @@ section {
 }
 .search .submit{
 	margin: auto 12px auto auto;
-	padding: 7px 23px 6px 23px;
+	/*padding: 7px 23px 6px;*/
 }
 
 .btn-toCart:hover, .search .submit:hover{
@@ -282,9 +282,117 @@ article>header{margin: 0; padding: 0;}
     color: #8f7c38;
 }
 
+.pager {
+	margin: 11px 12px auto 16px;
+	/*width: 100%;*/
+	background-color: #FAFAFA;
+	border-radius: 10px;
+	border: solid 1px #F3F3F3;
+	padding: 0 8px 0 10px;
+	
+	display: flex;
+	flex-direction: row;
+}
+.pager a {
+	text-decoration: none;
+	outline: 0;
+	margin:4px 2px 3px 1px;
+	text-align: center;
+	color: #FBFFEB;
+	
+	font-size: 12px;
+}
 
+.pager a.num{
+	background: url('imgShop/pager-button.png') 0 0 no-repeat;
+	height: 21px;
+	width: 21px;
+	line-height: 21px;
+	vertical-align: middle;
+	text-shadow: #69832B 0 0 1px, 0 1px 0 rgba(0,0,0,0.25);
+}
 
+.pager a.next, .pager a.prev{
+	color: #707070;
+}
 
+.pager a.prev{
+	color: #80934E;
+	margin-right: 10px;
+}
+
+.pager span{
+	margin: auto 0px auto auto;
+	height: 24px;
+}
+
+footer {
+	justify-content: flex-start;
+	padding: 15px 14px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #707070;
+    font-size: 11px;
+    font-family: 'Exo 2', regular;
+    margin-right: 10px;
+	
+}
+
+footer a:hover{color: #a6b289;}
+footer  .column{
+    line-height: 0.2em;
+	margin-right: 15px;
+}
+
+footer .column p {
+	margin: 8px 0;
+}
+
+.green {color:#83A03C;}
+
+.social {
+	overflow: hidden;
+}
+
+.social a {
+	width: 21px;
+	height: 22px;
+	display: inline-block;
+	margin-right: 6px;
+	background: url('imgShop/sn-button.png') 0 0 no-repeat;
+}
+.social a div{
+	width: 21px;
+	height: 22px;
+	background: url('imgShop/sprite16.png') no-repeat;
+}
+
+.social a.fb div{
+	background-position: -54px 0px;
+	width: 9px;	height: 16px;
+	margin: 4px auto;
+}
+
+.social a.gl div{
+	background-position: 0px 0px;
+	width: 16px; height: 15px;
+	margin: 4px auto;
+}
+
+.social a.tw div{
+	background-position: -17px 0px;
+	width: 16px; height: 14px;
+	margin: 4px auto;
+}
+
+.delivery-info{
+    color: #707070;
+    text-align: justify;
+	font-size: 12px;
+	padding: 14px;
+}
 
 
 
